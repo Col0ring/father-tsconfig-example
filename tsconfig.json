@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ESNEXT",
+    "module": "CommonJS",
+    "strict": true,
+    "noEmit": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "noImplicitAny": false,
+    "jsx": "react",
+    "baseUrl": "./",
+    "paths": {
+      "@@/*": [".dumi/tmp/*"],
+      "@examples/*": [
+        "./packages/*/src/index.ts",
+        "./packages/*/src/index.tsx",
+        "./packages/*/src/index.js"
+      ]
+    }
+  },
+  "include": [".dumi/**/*", ".dumirc.ts", "packages/**/*", "typings.d.ts"],
+  "exclude": ["node_modules"]
+}

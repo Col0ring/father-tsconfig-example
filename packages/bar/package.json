@@ -1,0 +1,16 @@
+{
+  "name": "@examples/bar",
+  "version": "0.0.1",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "typings": "dist/esm/index.d.ts",
+  "scripts": {
+    "build": "father build",
+    "dev": "father dev",
+    "doctor": "father doctor",
+    "tsc:build": "tsc -p tsconfig.build.json"
+  },
+  "dependencies": {
+    "@examples/foo": "workspace:*"
+  }
+}
